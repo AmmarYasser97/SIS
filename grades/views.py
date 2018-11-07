@@ -43,7 +43,7 @@ def add_grade(request):
     if form.is_valid():
         instance = form.save(commit=False)
         instance.save()
-        return redirect('../../')
+        return redirect('../')
 
     context = {
         'form': form,
